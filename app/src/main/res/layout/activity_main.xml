@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#939191"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/profile"
+            android:layout_width="wrap_content"
+            android:background="#0A78AA"
+            android:paddingBottom="15dp"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/tbMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                app:navigationIcon="@drawable/baseline_arrow_back_24" />
+            <FrameLayout android:layout_width="50dp"
+                android:id="@+id/nameCircle"
+                android:layout_below="@id/tbMain"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/background_circle"
+                android:layout_height="50dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="AZM" />
+            </FrameLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_alignTop="@+id/nameCircle"
+                android:layout_toRightOf="@+id/nameCircle"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Aung Zin Moe"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="online"
+                    android:textColor="#CAC7C7"
+                    android:textSize="14sp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/setProfile"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="wrap_content"
+            android:textColor="#6088F1"
+            android:paddingVertical="10dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:layout_below="@id/profile"
+            android:drawablePadding="20dp"
+            android:drawableStart="@drawable/outline_photo_camera_24"
+            android:text="Set Profile Photo"/>
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_below="@id/setProfile"
+    android:id="@+id/account"
+    android:layout_marginTop="10dp"
+    android:background="@color/white"
+    android:padding="5dp"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Account"
+        android:textColor="#6088F1"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:id="@+id/accountText"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/phoneNumber"
+    android:layout_below="@+id/accountText"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="+95 97877810106"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Tap to change phone number"
+            android:textColor="#CAC7C7"
+            android:textSize="14sp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vDivider1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ddd"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/phoneNumber"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/userName"
+        android:layout_below="@+id/vDivider1"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="\@aungzinmoe"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Username"
+            android:textColor="#CAC7C7"
+            android:textSize="14sp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vDivider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ddd"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/userName"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/bio"
+        android:layout_below="@+id/vDivider2"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Bio"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Add a few words about yourself"
+            android:textColor="#CAC7C7"
+            android:textSize="14sp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_below="@id/account"
+            android:layout_marginTop="10dp"
+            android:id="@+id/setting"
+            android:background="@color/white"
+            android:padding="5dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Settings"
+                android:textColor="#6088F1"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:id="@+id/settingsText"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/chatSetting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:paddingVertical="10dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:layout_below="@id/settingsText"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/baseline_chat_bubble_outline_24"
+                android:text="Chat Settings"/>
+            <View
+                android:id="@+id/vDivider3"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#ddd"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/chatSetting"
+                />
+
+            <TextView
+                android:id="@+id/privacySetting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:paddingVertical="10dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:layout_below="@id/vDivider3"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/outline_lock_24"
+                android:text="Privacy and Security"/>
+            <View
+                android:id="@+id/vDivider4"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#ddd"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/privacySetting"
+                />
+            <TextView
+                android:id="@+id/notifcationSetting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:paddingVertical="10dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:layout_below="@id/vDivider4"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/outline_notifications_24"
+                android:text="Notifications and Sounds"/>
+            <View
+                android:id="@+id/vDivider5"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#ddd"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/notifcationSetting"
+                />
+
+
+            <TextView
+                android:id="@+id/dataSettings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:paddingVertical="10dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:layout_below="@id/vDivider5"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/baseline_storage_24"
+                android:text="Data and Storage"/>
+            <View
+                android:id="@+id/vDivider6"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#ddd"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/dataSettings"
+                />
+
+            <TextView
+                android:id="@+id/powerSetting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:paddingVertical="10dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:layout_below="@id/vDivider6"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/baseline_battery_charging_full_24"
+                android:text="Power Saving"/>
+            <View
+                android:id="@+id/vDivider7"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#ddd"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/powerSetting"
+                />
+
+            <TextView
+                android:id="@+id/chatFolders"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:paddingVertical="10dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:layout_below="@id/vDivider7"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/outline_folder_24"
+                android:text="Chat Folders"/>
+            <View
+                android:id="@+id/vDivider8"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#ddd"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/chatFolders"
+                />
+            <TextView
+                android:id="@+id/devicesSetting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:paddingVertical="10dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:layout_below="@id/vDivider8"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/baseline_devices_24"
+                android:text="Devices"/>
+            <View
+                android:id="@+id/vDivider9"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#ddd"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/devicesSetting"
+                />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_below="@id/vDivider9"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:paddingVertical="10dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/baseline_language_24"
+        android:text="Language"/>
+    <TextView
+        android:textColor="#2596EF"
+        android:layout_alignBaseline="@+id/language"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:layout_alignParentEnd="true"
+        android:layout_height="wrap_content"
+        android:text="English"
+        android:layout_marginEnd="10dp"
+        />
+</RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/telePremium"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="#6088F1"
+            android:paddingVertical="10dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="25dp"
+            android:layout_below="@id/setting"
+            android:drawablePadding="15dp"
+            android:drawableStart="@drawable/outline_star_rate_24"
+            android:text="Telegram Premium"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/telePremium"
+        android:layout_marginTop="10dp"
+        android:id="@+id/help"
+        android:background="@color/white"
+        android:padding="5dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Help"
+            android:textColor="#6088F1"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:id="@+id/helpText"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/askQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:paddingVertical="10dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:layout_below="@id/helpText"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/outline_question_answer_24"
+            android:text="Ask a Question"/>
+        <View
+            android:id="@+id/vDivider10"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#ddd"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/askQuestion"
+            />
+
+        <TextView
+            android:id="@+id/faq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:paddingVertical="10dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:layout_below="@id/vDivider10"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/outline_question_mark_24"
+            android:text="Telegram FAQ"/>
+        <View
+            android:id="@+id/vDivider11"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#ddd"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/faq"
+            />
+        <TextView
+            android:id="@+id/privacyPolicy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:paddingVertical="10dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:layout_below="@id/vDivider11"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/outline_privacy_tip_24"
+            android:text="Privacy Policy"/></RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/help"
+            android:gravity="center"
+            android:layout_marginVertical="10dp"
+            android:layout_centerHorizontal="true"
+            android:text="Telegram Android v10.0.2(3796) store bundled \n arm64-v8a"
+            />
+
+    </RelativeLayout>
+
+
+</ScrollView>
